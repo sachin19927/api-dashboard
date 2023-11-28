@@ -1,0 +1,77 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "api-dashboard-shared-util": {
+      "projectType": "library",
+      "root": "projects/api-dashboard-shared-util",
+      "sourceRoot": "projects/api-dashboard-shared-util/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/api-dashboard-shared-util/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/api-dashboard-shared-util/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/api-dashboard-shared-util/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/api-dashboard-shared-util/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
+    },
+    "events-dashboard": {
+      "projectType": "library",
+      "root": "projects/events-dashboard",
+      "sourceRoot": "projects/events-dashboard/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/events-dashboard/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/events-dashboard/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/events-dashboard/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/events-dashboard/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "analytics": "b78fc232-e494-41be-b560-f80197ed98cd"
+  },
+  "defaultProject":"api-dashboard-shared-util"
+}
