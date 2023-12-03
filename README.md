@@ -1,5 +1,16 @@
-# api-dashboard
-code base with MFE
+# API DASHBOARD MFE 
+
+## Overview
+* [Installing Tools](#installing-tools)
+* [Running Examples](#running-examples)
+* [Course Overview](#course-overview)
+  - [Course Steps](#step-list)
+  - [Expectations](#expectations)
+* [About in28Minutes](#about-in28minutes)
+  - [Our Beliefs](#our-beliefs)
+  - [Our Approach](#our-approach)
+  - [Find Us](#useful-links)
+  - [Other Courses](#other-courses)
 
 
 ng new api-dashboard-shared-util-ui --create-application=false
