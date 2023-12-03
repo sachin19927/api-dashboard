@@ -12,6 +12,11 @@ ng generate library events-dashboard
 
 ng new api-dashboard-master-ui
 ng add @angular-architects/module-federation
+ng add @ionic/angular
+ng add @angular/material
+
+
+
 
 
 ng new api-dashboard-idp-token
@@ -33,5 +38,31 @@ ng generate guard service/basic
 
 
 ng generate module error --routing --route  --module app
-ng generate component error  --module errror
+ng generate component error  --module error
 ng generate guard service/basic
+
+
+
+ng new api-dashboard-widgets
+ng add @angular-architects/module-federation
+4301
+
+ng new api-dashboard-movies
+ng add @angular-architects/module-federation
+4302
+
+ng new api-dashboard-library
+ng add @angular-architects/module-federation
+4304
+
+ng new api-dashboard-product
+ng add @angular-architects/module-federation
+4304
+
+ng new api-dashboard-contact-us
+ng add @angular-architects/module-federation
+4307
+
+ng new api-dashboard-feedback	
+ng add @angular-architects/module-federation
+4305
